@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ココロブロック</title>
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --card: #ffffff;
+    --text: #2a2a33;
+    --muted: #6a6a76;
+    --accent: #738ed1;
+    --line: #e6e4de;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { padding: 64px 0 40px; text-align: center; }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: .02em; }
+  .tagline { color: var(--muted); margin: 0; font-size: 15px; }
+  nav { text-align: center; margin-bottom: 48px; }
+  nav a {
+    display: inline-block; margin: 0 10px; padding: 8px 18px;
+    color: var(--accent); text-decoration: none; font-size: 14px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--card);
+  }
+  section {
+    background: var(--card); border-radius: 16px;
+    padding: 32px 28px; margin-bottom: 28px;
+  }
+  h2 { font-size: 20px; margin: 0 0 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 28px 0 8px; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .updated { color: var(--muted); font-size: 13px; margin-top: 0; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding-top: 20px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17171b; --card:#212127; --text:#ececf0; --muted:#9a9aa6; --line:#33333c; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ココロブロック</h1>
+  <p class="tagline">つらい記憶と、すこしずつ</p>
+</header>
+
+<nav>
+  <a href="#privacy">プライバシーポリシー</a>
+  <a href="#support">サポート</a>
+</nav>
+
+<section id="privacy">
+  <h2>プライバシーポリシー</h2>
+  <p class="updated">最終更新日: 2026年8月3日</p>
+
+  <p>ココロブロック(以下「本アプリ」)は、利用者のプライバシーを最大限尊重して設計されています。</p>
+
+  <h3>1. 本アプリが収集しない情報</h3>
+  <p>本アプリの開発者は、以下の情報を一切収集・送信・保存しません。</p>
+  <ul>
+    <li>氏名、メールアドレス、電話番号などの個人を特定できる情報</li>
+    <li>セッションで入力された「つらい記憶」のメモの内容</li>
+    <li>気分スコア、セッション日時、プレイ記録などの利用記録</li>
+    <li>位置情報、連絡先、写真などの端末内データ</li>
+  </ul>
+
+  <h3>2. 記録の保存場所</h3>
+  <p>セッションの記録(気分スコア、日時、メモ)は、すべて<strong>利用者の端末内にのみ</strong>保存されます。開発者のサーバーや外部サービスに送信されることはありません。</p>
+  <ul>
+    <li>メモの保存は任意です。既定では保存されず、セッション終了時に破棄されます。</li>
+    <li>設定でFace ID / パスコードによるロックを有効にできます。</li>
+    <li>本アプリを削除すると、保存されたすべての記録も端末から削除されます。開発者は復元できません。</li>
+  </ul>
+
+  <h3>3. 広告について</h3>
+  <p>無料版では、Google AdMobによる動画広告(リワード広告)を配信しています。広告は利用者が「広告を見る」を選んだときにのみ表示され、セッションの途中に割り込むことはありません。</p>
+  <p>広告配信のため、Google および広告配信パートナーが広告識別子(IDFA)等の情報を取得する場合があります。これらの情報は、広告の表示回数の調整や効果測定のために、Google およびそのパートナーによって利用されることがあります。詳細は以下をご確認ください。</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google のプライバシーポリシー</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google がパートナーのサイトやアプリから収集した情報をどのように使用するか</a></li>
+  </ul>
+  <p>初回の広告視聴時に、iOSのトラッキング許可(App Tracking Transparency)を確認します。許可しない場合は非パーソナライズ広告が配信され、本アプリのすべての機能は変わらずご利用いただけます。</p>
+  <p>Proへアップグレードすると広告は表示されなくなり、広告関連の情報取得も行われません。</p>
+
+  <h3>4. App内課金</h3>
+  <p>Proへのアップグレードの決済はAppleが処理します。開発者がクレジットカード情報などの決済情報を受け取ることはありません。購入状態の確認はApple提供の仕組み(StoreKit)を通じて端末上で行われます。</p>
+
+  <h3>5. 子どものプライバシー</h3>
+  <p>本アプリは13歳未満の子どもを対象としていません。</p>
+
+  <h3>6. 本ポリシーの変更</h3>
+  <p>本ポリシーを変更する場合は、本ページの内容を更新し、最終更新日を改めます。</p>
+
+  <h3>7. お問い合わせ</h3>
+  <p><a href="mailto:takahashi.tikku@gmail.com">takahashi.tikku@gmail.com</a></p>
+</section>
+
+<section id="support">
+  <h2>サポート</h2>
+
+  <h3>ご利用にあたって</h3>
+  <p>本アプリは医療機器ではなく、疾病の診断・治療・予防を目的とするものではありません。心的外傷後ストレス障害(PTSD)などの症状がある場合、またはその疑いがある場合は、必ず医師・臨床心理士などの専門家にご相談ください。</p>
+  <p>ご利用中に気分が悪くなった場合は、直ちに利用を中止してください。</p>
+
+  <h3>つらいときの相談窓口</h3>
+  <ul>
+    <li>こころの健康相談統一ダイヤル 0570-064-556</li>
+    <li>いのちの電話 0570-783-556</li>
+    <li><a href="https://www.mhlw.go.jp/mamorouyokokoro/" target="_blank" rel="noopener">まもろうよ こころ(厚生労働省)</a> — 電話・SNSの相談窓口一覧</li>
+  </ul>
+
+  <h3>よくある質問</h3>
+  <h4>記録が消えてしまいました</h4>
+  <p>記録は端末内にのみ保存されるため、アプリを削除すると復元できません。開発者側にもデータは残っていません。</p>
+  <h4>Proを購入したのに反映されません</h4>
+  <p>「せってい」→「購入を復元する」をお試しください。同じApple IDでサインインしている必要があります。</p>
+  <h4>広告が表示されず、セッションを始められません</h4>
+  <p>広告が読み込めない場合でも、セッションは開始できる設計になっています。それでも始められない場合はお問い合わせください。</p>
+
+  <h3>お問い合わせ</h3>
+  <p><a href="mailto:takahashi.tikku@gmail.com">takahashi.tikku@gmail.com</a></p>
+</section>
+
+<footer>© 2026 チック症のタカハシ</footer>
+
+</div>
+</body>
+</html>
